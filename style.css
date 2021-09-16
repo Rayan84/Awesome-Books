@@ -9,7 +9,6 @@ body {
 .nav {
   border: double black 3px;
   padding-left: 30px;
-  margin: auto;
   border-radius: 4px;
   justify-content: space-between;
 }
@@ -35,6 +34,7 @@ body {
 
 .table-entry div,
 .table-entry,
+.book-table,
 .nav,
 .links,
 .d-flex {
@@ -94,7 +94,6 @@ body {
 
 .book-table {
   min-width: 260px;
-  display: flex;
   flex-direction: column;
   border: solid black 1px;
   border-radius:4px;
