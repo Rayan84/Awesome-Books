@@ -87,10 +87,26 @@ class AwesomeBooks {
 }
 
 const navLinks = document.querySelectorAll('.nav-link');
+
+browsePages = (num) => {
+  const section = document.querySelectorAll('Section');
+  for (let i = 0; i < section.length; i++){
+    section[i].style.display = 'none';
+  }
+  section[num].style.display = 'block';
+}
+
 navLinks[0].addEventListener('click', (e) => {
-  document.getElementById('Add-section').style.display = 'none';
+  browsePages(0)
 })
-console.log(navLinks);
+
+navLinks[1].addEventListener('click', (e) => {
+  browsePages(1);
+})
+
+navLinks[2].addEventListener('click', (e) => {
+  browsePages(2);
+})
 
 const books = new AwesomeBooks();
 
