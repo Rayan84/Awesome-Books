@@ -185,3 +185,8 @@ footer {
   border-radius: 3px;
   margin-bottom: 10px;
 }
+
+
+.display-none {
+  display: none;
+}

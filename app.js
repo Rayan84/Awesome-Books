@@ -94,7 +94,7 @@ reloadPage() {
 }
 
 // eslint-disable-next-line
-browsePages = (num) => {
+  browsePages = (num) => {
   const section = document.querySelectorAll('section');
   const navLinks = document.querySelectorAll('.nav-link');
   for (let i = 0; i < section.length; i += 1) {

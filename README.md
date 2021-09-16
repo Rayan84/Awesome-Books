@@ -8,6 +8,9 @@ HTML
 JAVASCRIPT
 CSS
 
+### Screenshot
+![Image of Yaktocat](images/screenshot.png)
+
 ### Live Demo
 [Live Link](https://rayan84.github.io/awesome-books/)
 
