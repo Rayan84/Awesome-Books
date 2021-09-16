@@ -11,8 +11,8 @@ class AwesomeBooks {
 
     let shouldAdd = true;
     if (booktitle && bookauthor) {
-      this.bookArray.forEach((book) => {
-        if (book.title === booktitle) {
+      this.bookArray.forEach((b) => {
+        if (b.title === booktitle) {
           shouldAdd = false;
         }
       });
@@ -57,7 +57,6 @@ class AwesomeBooks {
       td.appendChild(removeButton);
       tr.appendChild(td);
       tableList.appendChild(tr);
-      tableList.style.border = '5px solid #789';
     });
   }
 
@@ -76,17 +75,36 @@ class AwesomeBooks {
     });
   }
 
-  reloadPage() {
-    window.onload = () => {
-      if (localStorage.getItem('books') !== null) {
-        this.bookArray = JSON.parse(localStorage.getItem('books'));
-        this.populateTable();
-      }
-    };
-  }
+insertDateTime = () => {
+  // eslint-disable-next-line
+  const DateTime = luxon.DateTime.now();
+  const timeDisplay = document.getElementById('time-display');
+  timeDisplay.innerHTML = DateTime;
+};
+
+reloadPage() {
+  window.onload = () => {
+    if (localStorage.getItem('books') !== null) {
+      this.bookArray = JSON.parse(localStorage.getItem('books'));
+      this.populateTable();
+    }
+  };
+  this.insertDateTime();
+}
 }
 
-const books = new AwesomeBooks();
+// eslint-disable-next-line
+  browsePages = (num) => {
+  const section = document.querySelectorAll('section');
+  const navLinks = document.querySelectorAll('.nav-link');
+  for (let i = 0; i < section.length; i += 1) {
+    section[i].style.display = 'none';
+    navLinks[i].style.color = 'black';
+  }
+  section[num].style.display = 'block';
+  navLinks[num].style.color = 'blue';
+};
 
+const books = new AwesomeBooks();
 books.handleSubmit();
 books.reloadPage();

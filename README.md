@@ -1,4 +1,4 @@
-Awesome-Book-Store
+## Awesome-Book
 
 Project Description
 A lightweight JavaScript project that allows users to interact with a fully client-based interface. Users can add books that they own to easily keep track of their list of books. The added books can be removed from the list by using the "Remove Book" button.
@@ -8,10 +8,14 @@ HTML
 JAVASCRIPT
 CSS
 
-Live Version Link
+### Screenshot
+![Image of Yaktocat](images/screenshot.png)
+
+### Live Demo
+[Live Link](https://rayan84.github.io/awesome-books/)
 
 
-Contributors
+### Contributors
 👤 Denzel Thandolwenkosi Nkomo
 
 GitHub : @den-cloud
@@ -20,7 +24,7 @@ GitHub : @den-cloud
 
 GitHub : @Rayan84
 
-🤝 Contributing
+### 🤝 Contributing
 Contributions, issues and feature requests are welcome!
 
 Feel free to check the issues page.
