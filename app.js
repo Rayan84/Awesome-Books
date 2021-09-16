@@ -57,7 +57,7 @@ class AwesomeBooks {
       td.appendChild(removeButton);
       tr.appendChild(td);
       tableList.appendChild(tr);
-      tableList.style.border = '5px solid #789';
+
     });
   }
 

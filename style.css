@@ -39,8 +39,7 @@ body {
 }
 
 .List-section,
-.Add-section,
-.main-content {
+.Add-section {
   flex-direction: column;
   align-items: center;
 }
@@ -48,6 +47,7 @@ body {
 .main-content {
   justify-content: center;
   height: 100vh;
+  margin-top: 100px;
 }
 
 .width-100-percent {
@@ -78,6 +78,9 @@ body {
   text-align: center;
 }
 
+.margin-auto {
+  margin: auto;
+}
 .List-section {
   width: 50%;
 }
@@ -86,6 +89,8 @@ body {
   min-width: 260px;
   display: flex;
   flex-direction: column;
+  border: solid black 1px;
+  border-radius:4px;
 }
 
 .table-entry,
@@ -123,7 +128,6 @@ body {
 }
 
 .List-section-hr {
-  border: 2px solid #789;
   width: 90%;
   margin-top: 20px;
 }
@@ -160,4 +164,8 @@ h1 {
 h3  {
   font-size: xx-large;
   font-weight: 100;
+}
+
+.contact-section {
+  width: 80%;
 }
