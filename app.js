@@ -92,8 +92,10 @@ browsePages = (num) => {
   const section = document.querySelectorAll('Section');
   for (let i = 0; i < section.length; i++){
     section[i].style.display = 'none';
+    navLinks[i].style.color = 'black';
   }
   section[num].style.display = 'block';
+  navLinks[num].style.color = 'blue';
 }
 
 navLinks[0].addEventListener('click', (e) => {
