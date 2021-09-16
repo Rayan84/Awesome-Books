@@ -87,9 +87,9 @@ reloadPage() {
     if (localStorage.getItem('books') !== null) {
       this.bookArray = JSON.parse(localStorage.getItem('books'));
       this.populateTable();
-      this.insertDateTime();
     }
   };
+  this.insertDateTime();
 }
 }
 
