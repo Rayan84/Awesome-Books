@@ -11,8 +11,8 @@ class AwesomeBooks {
 
     let shouldAdd = true;
     if (booktitle && bookauthor) {
-      this.bookArray.forEach((book) => {
-        if (book.title === booktitle) {
+      this.bookArray.forEach((b) => {
+        if (b.title === booktitle) {
           shouldAdd = false;
         }
       });
@@ -75,48 +75,36 @@ class AwesomeBooks {
     });
   }
 
-  reloadPage() {
-    window.onload = () => {
-      if (localStorage.getItem('books') !== null) {
-        this.bookArray = JSON.parse(localStorage.getItem('books'));
-        this.populateTable();
-      }
-    };
-  }
-
-    const navlinks = document.querySelectorAll('.nav-link');
-
-    browsePages = (num) => {
-    const section = document.querySelectorAll('Section');
-    for (let i = 0; i < section.length; i++) {
-      section[i].style.display = 'none';
-      navlinks[i].style.color = 'black';
-    }
-    section[num].style.display = 'block';
-    navlinks[num].style.color = 'blue';
-
-  };
-
-  navlinks[0].addEventListener('click', (e) => {
-    browsePages(0);
-  });
-
-  navlinks[1].addEventListener('click', (e) => {
-    browsePages(1);
-  });
-
-  navlinks[2].addEventListener('click', (e) => {
-    browsePages(2);
-  });
-
+insertDateTime = () => {
+  // eslint-disable-next-line
   const DateTime = luxon.DateTime.now();
   const timeDisplay = document.getElementById('time-display');
   timeDisplay.innerHTML = DateTime;
+};
+
+reloadPage() {
+  window.onload = () => {
+    if (localStorage.getItem('books') !== null) {
+      this.bookArray = JSON.parse(localStorage.getItem('books'));
+      this.populateTable();
+      this.insertDateTime();
+    }
+  };
+}
 }
 
-
+// eslint-disable-next-line
+browsePages = (num) => {
+  const section = document.querySelectorAll('section');
+  const navLinks = document.querySelectorAll('.nav-link');
+  for (let i = 0; i < section.length; i += 1) {
+    section[i].style.display = 'none';
+    navLinks[i].style.color = 'black';
+  }
+  section[num].style.display = 'block';
+  navLinks[num].style.color = 'blue';
+};
 
 const books = new AwesomeBooks();
-
 books.handleSubmit();
 books.reloadPage();
