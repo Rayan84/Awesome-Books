@@ -83,35 +83,38 @@ class AwesomeBooks {
       }
     };
   }
+
+    const navlinks = document.querySelectorAll('.nav-link');
+
+    browsePages = (num) => {
+    const section = document.querySelectorAll('Section');
+    for (let i = 0; i < section.length; i++) {
+      section[i].style.display = 'none';
+      navlinks[i].style.color = 'black';
+    }
+    section[num].style.display = 'block';
+    navlinks[num].style.color = 'blue';
+
+  };
+
+  navlinks[0].addEventListener('click', (e) => {
+    browsePages(0);
+  });
+
+  navlinks[1].addEventListener('click', (e) => {
+    browsePages(1);
+  });
+
+  navlinks[2].addEventListener('click', (e) => {
+    browsePages(2);
+  });
+
+  const DateTime = luxon.DateTime.now();
+  const timeDisplay = document.getElementById('time-display');
+  timeDisplay.innerHTML = DateTime;
 }
 
-const navLinks = document.querySelectorAll('.nav-link');
 
-browsePages = (num) => {
-  const section = document.querySelectorAll('Section');
-  for (let i = 0; i < section.length; i++) {
-    section[i].style.display = 'none';
-    navLinks[i].style.color = 'black';
-  }
-  section[num].style.display = 'block';
-  navLinks[num].style.color = 'blue';
-};
-
-navLinks[0].addEventListener('click', (e) => {
-  browsePages(0);
-});
-
-navLinks[1].addEventListener('click', (e) => {
-  browsePages(1);
-});
-
-navLinks[2].addEventListener('click', (e) => {
-  browsePages(2);
-});
-
-const DateTime = luxon.DateTime.now();
-const timeDisplay = document.getElementById('time-display');
-timeDisplay.innerHTML = DateTime;
 
 const books = new AwesomeBooks();
 
