@@ -48,7 +48,7 @@ body {
 .main-content {
   justify-content: center;
   margin-top: 100px;
-  min-height: 60vh;
+  min-height: 70vh;
 }
 
 .width-100-percent {
@@ -172,6 +172,11 @@ h3  {
 }
 
 footer {
+  margin:auto;
+  width: 95%;
   padding-left: 35px;
   bottom: 10px;
+  border: black 1px solid;
+  border-radius: 3px;
+  margin-bottom: 10px;
 }
