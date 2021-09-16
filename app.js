@@ -86,6 +86,12 @@ class AwesomeBooks {
   }
 }
 
+const navLinks = document.querySelectorAll('.nav-link');
+navLinks[0].addEventListener('click', (e) => {
+  document.getElementById('Add-section').style.display = 'none';
+})
+console.log(navLinks);
+
 const books = new AwesomeBooks();
 
 books.handleSubmit();

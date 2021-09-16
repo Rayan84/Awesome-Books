@@ -5,14 +5,31 @@ body {
   padding: 0;
   background: #fff;
   font-family: Poppins, Arial, Helvetica, sans-serif;
-  background-image: url(images/background.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100em;
 }
 
+.nav {
+  border: solid black 1px;
+  margin-top: 0;
+  padding-left: 30px;
+}
+
+.nav ul {
+  margin-left: 300px;
+}
+
+.nav-link {
+  list-style: none;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
 .table-entry div,
 .table-entry,
+.nav,
+.links,
 .d-flex {
   display: flex;
 }
@@ -26,8 +43,28 @@ body {
 
 .main-content {
   justify-content: center;
-  width: 100%;
   height: 100vh;
+}
+
+.width-100-percent {
+  width: 100%;
+}
+
+.margin-top-bottom-2px {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+.margin-bottom-0 {
+  margin-bottom: 0;
+}
+
+.margin-top-0 {
+  margin-top: 0;
+}
+
+
+.flex-direction-row {
+  flex-direction: row;
 }
 
 .List-section {
@@ -35,7 +72,6 @@ body {
 }
 
 .book-table {
-  width: 100%;
   min-width: 260px;
   display: flex;
   flex-direction: column;
