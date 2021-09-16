@@ -1,175 +1,187 @@
-@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 body {
-font-family:Poppins, Arial, Helvetica, sans-serif;
-margin:0;
-padding:0;
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
 }
 
 .nav {
-border:double #000 3px;
-padding-left:30px;
-border-radius:4px;
-justify-content:space-between;
+  border: double black 3px;
+  padding-left: 30px;
+  border-radius: 4px;
+  justify-content: space-between;
 }
 
 .nav ul {
-padding-right:20px;
-padding-top:4px;
-padding-bottom:4px;
+  padding-right: 20px;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
 .nav-link {
-font-weight:600;
-list-style:none;
-margin-left:20px;
-cursor:pointer;
-padding-right:12px;
-text-transform:uppercase;
+  font-weight: 600;
+  list-style: none;
+  margin-left: 20px;
+  cursor: pointer;
+  padding-right: 12px;
+  text-transform: uppercase;
 }
 
 .border-right-1-px {
-border-right:1px solid #000;
+  border-right: 1px solid black;
 }
 
-.table-entry div,.table-entry,.book-table,.nav,.links,.d-flex {
-display:flex;
+.table-entry div,
+.table-entry,
+.book-table,
+.nav,
+.links,
+.d-flex {
+  display: flex;
 }
 
-.List-section,.Add-section {
-flex-direction:column;
-align-items:center;
+.List-section,
+.Add-section {
+  flex-direction: column;
+  align-items: center;
 }
 
 .main-content {
-justify-content:center;
-margin-top:100px;
-min-height:70vh;
+  justify-content: center;
+  margin-top: 100px;
+  min-height: 70vh;
 }
 
 .width-100-percent {
-width:100%;
+  width: 100%;
 }
 
 .width-95-percent {
-width:95%;
+  width: 95%;
 }
 
 .margin-top-bottom-2px {
-margin-top:2px;
-margin-bottom:2px;
+  margin-top: 2px;
+  margin-bottom: 2px;
 }
 
 .margin-bottom-0 {
-margin-bottom:0;
+  margin-bottom: 0;
 }
 
 .margin-top-0 {
-margin-top:0;
+  margin-top: 0;
 }
 
 .float-right {
-float:right;
+  float: right;
 }
 
 .flex-direction-row {
-flex-direction:row;
+  flex-direction: row;
 }
 
 .text-align-center {
-text-align:center;
+  text-align: center;
 }
 
 .margin-auto {
-margin:auto;
+  margin: auto;
 }
 
 .List-section {
-width:50%;
+  width: 50%;
 }
 
 .book-table {
-min-width:260px;
-flex-direction:column;
-border:solid #000 1px;
-border-radius:4px;
+  min-width: 260px;
+  flex-direction: column;
+  border: solid black 1px;
+  border-radius: 4px;
 }
 
-.table-entry,.table-row {
-width:100%;
-justify-content:space-between;
+.table-entry,
+.table-row {
+  width: 100%;
+  justify-content: space-between;
 }
 
 .table-row:nth-child(even) {
-background:#724c6146;
+  background: #724c6146;
 }
 
 .table-entry {
-width:98%;
-margin:1%;
+  margin: 1%;
+  width: 98%;
 }
 
 .table-entry div {
-justify-content:space-between;
-width:40%;
+  justify-content: space-between;
+  width: 40%;
 }
 
 #time-display {
-margin-right:25px;
+  margin-right: 25px;
 }
 
 .table-entry div span {
-margin-right:10px;
+  margin-right: 10px;
 }
 
 .removeButton {
-height:30px;
-align-self:center;
-margin-left:10px;
+  height: 30px;
+  align-self: center;
+  margin-left: 10px;
 }
 
 .List-section-hr {
-width:90%;
-margin-top:20px;
+  width: 90%;
+  margin-top: 20px;
 }
 
 .Add-section {
-width:40%;
+  width: 40%;
 }
 
 fieldset {
-border:none;
-width:60%;
+  border: none;
+  width: 60%;
 }
 
 .form {
-flex-direction:column;
+  flex-direction: column;
 }
 
 .form-item {
-height:30px;
-margin:5px 0;
+  margin: 5px 0;
+  height: 30px;
 }
 
 .addButton {
-width:100px;
-align-self:center;
-border-radius:0;
+  width: 100px;
+  align-self: center;
+  border-radius: 0%;
+}
+
+h1 {
+  font-size: xx-large;
+  font-weight: 100;
+}
+
+h3 {
+  font-size: xx-large;
+  font-weight: 100;
 }
 
 .contact-section {
-width:80%;
+  width: 80%;
 }
 
 footer {
-padding-left:35px;
-bottom:10px;
-border:#000 1px solid;
-border-radius:3px;
-margin-bottom:10px;
-}
-
-h1,h3 {
-font-size:xx-large;
-font-weight:100;
+  padding-left: 35px;
+  bottom: 10px;
+  border: black 1px solid;
+  border-radius: 3px;
+  margin-bottom: 10px;
 }
