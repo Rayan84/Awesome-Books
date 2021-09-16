@@ -108,7 +108,12 @@ navLinks[2].addEventListener('click', (e) => {
   browsePages(2);
 })
 
+var DateTime = luxon.DateTime.now();
+const timeDisplay = document.getElementById('time-display');
+timeDisplay.innerHTML = DateTime;
+
 const books = new AwesomeBooks();
+
 
 books.handleSubmit();
 books.reloadPage();

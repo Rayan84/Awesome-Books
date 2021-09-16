@@ -11,13 +11,17 @@ body {
 }
 
 .nav {
-  border: solid black 1px;
+  border: double black 3px;
   margin-top: 0;
   padding-left: 30px;
+  width: 95%;
+  margin: auto;
+  border-radius: 4px;
+  justify-content: space-between;
 }
 
 .nav ul {
-  margin-left: 300px;
+  padding-right: 20px;
 }
 
 .nav-link {
@@ -62,9 +66,16 @@ body {
   margin-top: 0;
 }
 
+.float-right {
+  float: right;
+}
 
 .flex-direction-row {
   flex-direction: row;
+}
+
+.text-align-center {
+  text-align: center;
 }
 
 .List-section {
@@ -95,6 +106,10 @@ body {
 .table-entry div {
   justify-content: space-between;
   width: 40%;
+}
+
+#time-display {
+  margin-right: 25px;
 }
 
 .table-entry div span {
