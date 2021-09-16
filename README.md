@@ -9,7 +9,7 @@ JAVASCRIPT
 CSS
 
 ## Live Demo
-[Live Link](https://rayan84.github.io/Awesome-Books/)
+[Live Link](https://rayan84.github.io/awesome-books/)
 
 
 ## Contributors
