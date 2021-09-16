@@ -57,7 +57,6 @@ class AwesomeBooks {
       td.appendChild(removeButton);
       tr.appendChild(td);
       tableList.appendChild(tr);
-
     });
   }
 
@@ -90,32 +89,31 @@ const navLinks = document.querySelectorAll('.nav-link');
 
 browsePages = (num) => {
   const section = document.querySelectorAll('Section');
-  for (let i = 0; i < section.length; i++){
+  for (let i = 0; i < section.length; i++) {
     section[i].style.display = 'none';
     navLinks[i].style.color = 'black';
   }
   section[num].style.display = 'block';
   navLinks[num].style.color = 'blue';
-}
+};
 
 navLinks[0].addEventListener('click', (e) => {
-  browsePages(0)
-})
+  browsePages(0);
+});
 
 navLinks[1].addEventListener('click', (e) => {
   browsePages(1);
-})
+});
 
 navLinks[2].addEventListener('click', (e) => {
   browsePages(2);
-})
+});
 
-var DateTime = luxon.DateTime.now();
+const DateTime = luxon.DateTime.now();
 const timeDisplay = document.getElementById('time-display');
 timeDisplay.innerHTML = DateTime;
 
 const books = new AwesomeBooks();
-
 
 books.handleSubmit();
 books.reloadPage();
